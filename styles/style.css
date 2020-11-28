@@ -1,0 +1,68 @@
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  background: #1f1c2c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #928dab,
+    #1f1c2c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #928dab,
+    #1f1c2c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  color: whitesmoke;
+  font-size: 60px;
+  text-align: center;
+}
+.form1,
+#addBook {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap-reverse;
+}
+label {
+  margin: 4px;
+}
+input {
+  border: 0;
+  border-radius: 3px;
+}
+#addBook {
+  visibility: hidden;
+  margin: 15px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.books {
+  width: 150px;
+  border: solid 1px beige;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 0px 30px 25px 30px;
+}
+
+.btnFacha {
+  border-radius: 5px;
+  border: 0;
+  margin: 7px;
+  padding: 9px;
+}
+.btnFacha:hover {
+  cursor: pointer;
+}
+.btnRemove {
+  background-color: red;
+}
+
+.btnRead {
+  background-color: green;
+}
