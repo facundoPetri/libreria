@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Libreria</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Libreria</h1>
     <div class="form1">
-        <button class="btnFacha" onclick="show()">Nuevo Libro</button>
-        <form id="addBook" onsubmit="return false">
-            <label for="bookTitle">Titulo:</label>
-            <input type="text" id="bookTitle" required>
-            <label for="bookAuthor">Autor:</label>
-            <input type="text" id="bookAuthor" required>
-            <label for="bookPages">Paginas:</label>
-            <input type="number" id="bookPages" required>
-            <input class="btnFacha" type="submit" value="Agregar" id="btnsubmit" onclick="addBookToLibrary()">
-        </form>
+      <button class="btnFacha" onclick="show()">Nuevo Libro</button>
+      <form id="addBook" onsubmit="return false">
+        <label for="bookTitle">Titulo:</label>
+        <input type="text" id="bookTitle" required />
+        <label for="bookAuthor">Autor:</label>
+        <input type="text" id="bookAuthor" required />
+        <label for="bookPages">Paginas:</label>
+        <input type="number" id="bookPages" required />
+        <input
+          class="btnFacha"
+          type="submit"
+          value="Agregar"
+          id="btnsubmit"
+          onclick="addBookToLibrary()"
+        />
+      </form>
     </div>
-    <div class="container">
+    <div class="container"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.8/firebase-app.js"></script>
 
-    </div>
-</body>
-<script src="scripts.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD3YiSR4VubnFjg51HqJLix4U6TnO5NA8o",
+        authDomain: "libreria-2a70e.firebaseapp.com",
+        projectId: "libreria-2a70e",
+        storageBucket: "libreria-2a70e.appspot.com",
+        messagingSenderId: "604153867541",
+        appId: "1:604153867541:web:56d13d66f7d71519838d1c",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
+  <script src="scripts.js"></script>
 </html>
